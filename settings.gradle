@@ -1,7 +1,10 @@
 pluginManagement {
 	repositories {
 		gradlePluginPortal()
-		maven { url 'https://repo.spring.io/plugins-release' }
+		mavenCentral()
+		mavenLocal()
+		jcenter()
+		maven { url 'https://repo.spring.io/plugins-snapshot' }
 	}
 }
 apply from: "$rootDir/gradle/build-cache-settings.gradle"
